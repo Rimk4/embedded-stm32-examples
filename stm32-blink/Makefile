@@ -26,7 +26,8 @@ BUILD_DIR = build
 SOURCES = $(SRC_DIR)/main.c \
           $(SRC_DIR)/gpio.c \
           $(SRC_DIR)/delay.c \
-          $(SRC_DIR)/startup.c
+          $(SRC_DIR)/startup.c \
+		  $(SRC_DIR)/log.c 
 
 OBJECTS = $(SOURCES:$(SRC_DIR)/%.c=$(BUILD_DIR)/%.o)
 

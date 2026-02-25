@@ -35,4 +35,18 @@
 #define RCC_AHB1ENR_GPIOBEN   (1 << 1)  // Бит 1 для GPIOB
 #define RCC_AHB1ENR_GPIOCEN   (1 << 2)  // Бит 2 для GPIOC
 
+// RCC
+#define RCC_APB1ENR     (*(volatile uint32_t *)(RCC_BASE + 0x40))
+
+// USART3
+#define USART3_BASE     0x40004800
+#define USART3_SR       (*(volatile uint32_t *)(USART3_BASE + 0x00))
+#define USART3_DR       (*(volatile uint32_t *)(USART3_BASE + 0x04))
+#define USART3_BRR      (*(volatile uint32_t *)(USART3_BASE + 0x08))
+#define USART3_CR1      (*(volatile uint32_t *)(USART3_BASE + 0x0C))
+
+// GPIOC AFR (добавьте если нет)
+#define GPIOC_AFRL      (*(volatile uint32_t *)(GPIOC_BASE + 0x20))
+#define GPIOC_AFRH      (*(volatile uint32_t *)(GPIOC_BASE + 0x24))
+
 #endif // REGISTERS_H
