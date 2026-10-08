@@ -1,0 +1,10 @@
+build/
+Drivers/
+tinyusb/
+*.bin
+*.elf
+*.hex
+*.map
+repomix-*.txt
+repomix-*.xml
+repomix.config.json

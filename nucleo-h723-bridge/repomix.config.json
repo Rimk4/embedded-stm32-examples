@@ -1,0 +1,26 @@
+{
+  "output": {
+    "filePath": "repomix-output.txt",
+    "style": "markdown",
+    "removeComments": false,
+    "showLineNumbers": true
+  },
+  "include": [
+    "**/*.c",
+    "**/*.h",
+    "**/*.ld",
+    "**/Makefile",
+    "**/*.sh"
+  ],
+  "ignore": {
+    "useGitignore": true,
+    "useDefaultPatterns": true,
+    "customPatterns": [
+      "tinyusb/**",
+      "build/**",
+      "Drivers/**",
+      "repomix-output.xml"
+    ]
+  }
+}
+
