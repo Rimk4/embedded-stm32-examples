@@ -1,1 +1,5 @@
 build
+# Repomix artifacts
+repomix-output.*
+repomix.config.json
+*.xml
