@@ -5,6 +5,7 @@ tinyusb/
 *.elf
 *.hex
 *.map
-repomix-*.txt
-repomix-*.xml
+# Repomix artifacts
+repomix-output.*
 repomix.config.json
+*.xml
